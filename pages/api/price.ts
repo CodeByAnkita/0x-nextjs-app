@@ -12,10 +12,11 @@ export default async function handler(
 ) {
   const query = qs.stringify(req.query);
   const response = await fetch(
-    `https://polygon.api.0x.org/swap/v1/price?${query}`,
+    `https://mumbai.api.0x.org/swap/v1/price?${query}`,
+
     {
       headers: {
-        "0x-api-key": "c9f13c84-9fcb-4f42-aa30-a11b0d016aa5", // process.env.NEXT_PUBLIC_0X_API_KEY,
+        "0x-api-key": " cc3d39f0-5a9a-4f75-9047-65e7f063eb10", // process.env.NEXT_PUBLIC_0X_API_KEY,
       },
     }
   );
